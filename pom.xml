@@ -200,7 +200,7 @@
 				<configFilePath>${basedir}/src/main/resources/config/config.properties</configFilePath>
 
 				<!--deploy parameters -->
-				<jbossdeployhome>\Users\juanfrasr\servidor\jboss-4.2.3-1.GA\server\default\deploy</jbossdeployhome>
+				<jbossdeployhome>/home/kpax/servers/jboss/server/default/deploy</jbossdeployhome>
 			</properties>
 			<build>
 				<plugins>
@@ -230,6 +230,16 @@
 	</profiles>
 	<build>
 		<finalName>svrKpax</finalName>
+		<plugins>
+		<plugin>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.2</version>
+			<configuration>
+				<source>1.6</source>
+				<target>1.6</target>
+			</configuration>
+		</plugin>
+		</plugins>
 	</build>
 	<reporting>
 		<plugins>
